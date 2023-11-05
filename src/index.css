@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("./assets/tennis-chort.png");
+  background-size: 100% 100%;
+}
+
+.card-container {
+  min-height: 500px;
+  min-width: 210px;
+}
+.player-card {
+  background-color: rgba(94, 255, 0, 0.781);
+  height: 480px;
+  width: 215px;
+  & img {
+    filter: blur(1.5px);
+  }
+  &:hover {
+    box-shadow: 3px 3px 20px 5px rgba(0, 0, 0, 0.5);
+    & img {
+      transform: scale(0.95);
+      filter: none;
+    }
+  }
+}
